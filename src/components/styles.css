@@ -1,0 +1,142 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.tab-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.tab-btn {
+  background-color: #dde7fd;
+  color: #3366cc;
+  border: none;
+  border-radius: 6px;
+  font-size: 18px;
+  padding: 12px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-family: 'Arial', sans-serif;
+  margin: 0 10px;
+}
+
+.tab-btn.active {
+  background-color: #3366cc;
+  color: #fff;
+}
+
+.tab-content {
+  display: none;
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.form-container,
+.list-container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.form-container input[type='text'],
+.form-container input[type='date'],
+.form-container input[type='time'],
+.form-container textarea {
+  width: calc(100% - 20px);
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  color: #333;
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  outline: none;
+}
+
+.form-container button {
+  padding: 12px 24px;
+  background-color: #3366cc;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: 'Arial', sans-serif;
+}
+
+.form-container button:hover {
+  background-color: #4e7bff;
+}
+
+.list-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.list-container li {
+  padding: 20px;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+.list-container h2 {
+  margin-bottom: 15px;
+  font-size: 24px;
+  color: #3366cc;
+}
+
+.list-container h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #4e7bff;
+}
+
+.list-container p {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.list-container .event-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #3366cc;
+}
